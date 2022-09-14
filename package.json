@@ -2,6 +2,7 @@
   "version": "0.0.1",
   "name": "quant-charts",
   "author": "Gao",
+  "homepage": "https://github.com/meannoharm/quant-charts",
   "license": "Apache-2.0",
   "description": "Financial quantChart built with HTML5 canvas",
   "module": "dist/quantChart.esm.production.js",
