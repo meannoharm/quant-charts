@@ -14,10 +14,10 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		localization: {
 			timeFormatter: businessDayOrTimestamp => {
-				if (LightweightCharts.isBusinessDay(businessDayOrTimestamp)) {
+				if (QuantCharts.isBusinessDay(businessDayOrTimestamp)) {
 					return 'bd=' + businessDayOrTimestamp.day + '-' + businessDayOrTimestamp.month + '-' + businessDayOrTimestamp.year;
 				}
 

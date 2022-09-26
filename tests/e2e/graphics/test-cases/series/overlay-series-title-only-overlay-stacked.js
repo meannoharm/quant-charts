@@ -13,7 +13,7 @@ function generateData(func, shouldAddValue) {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container);
+	const chart = QuantCharts.createChart(container);
 
 	chart.priceScale('right').applyOptions({
 		visible: false,

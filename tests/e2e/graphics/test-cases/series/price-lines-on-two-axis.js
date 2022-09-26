@@ -13,7 +13,7 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		leftPriceScale: {
 			visible: true,
 			borderColor: '#EFF2F5',
@@ -35,7 +35,7 @@ function runTestCase(container) {
 		price: 10,
 		color: 'red',
 		lineWidth: 1,
-		lineStyle: LightweightCharts.LineStyle.Solid,
+		lineStyle: QuantCharts.LineStyle.Solid,
 		title: 'price line',
 	});
 

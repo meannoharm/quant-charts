@@ -13,12 +13,12 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		crosshair: {
 			vertLine: {
 				color: '#ff0000',
 				width: 2,
-				style: LightweightCharts.LineStyle.Solid,
+				style: QuantCharts.LineStyle.Solid,
 			},
 			horzLine: {
 				color: '#00ff00',

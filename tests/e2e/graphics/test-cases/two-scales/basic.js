@@ -46,7 +46,7 @@ function generateDataHist() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		leftPriceScale: {
 			visible: true,
 			scaleMargins: {
@@ -70,7 +70,7 @@ function runTestCase(container) {
 		lineWidth: 1,
 		color: '#ff0000',
 		priceLineWidth: 1,
-		priceLineStyle: LightweightCharts.LineStyle.LargeDashed,
+		priceLineStyle: QuantCharts.LineStyle.LargeDashed,
 		priceScaleId: 'left',
 	});
 

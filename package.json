@@ -5,7 +5,7 @@
   "homepage": "https://github.com/meannoharm/quant-charts",
   "license": "Apache-2.0",
   "description": "Financial quantChart built with HTML5 canvas",
-  "module": "dist/quantChart.esm.production.js",
+  "module": "dist/quant-charts.esm.production.js",
   "main": "index.js",
   "typings": "dist/typings.d.ts",
   "files": [

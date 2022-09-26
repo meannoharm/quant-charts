@@ -1,6 +1,6 @@
 function runTestCase(container) {
 	const width = 400;
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		width: width,
 		height: 200,
 		rightPriceScale: {

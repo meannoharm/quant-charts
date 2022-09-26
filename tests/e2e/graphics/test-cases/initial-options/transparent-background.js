@@ -14,7 +14,7 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		layout: {
 			backgroundColor: 'rgba(80, 80, 80, 0.5)',
 		},

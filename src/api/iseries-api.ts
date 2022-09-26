@@ -210,7 +210,7 @@ export interface ISeriesApi<TSeriesType extends SeriesType> {
 	 *     price: 80.0,
 	 *     color: 'green',
 	 *     lineWidth: 2,
-	 *     lineStyle: LightweightCharts.LineStyle.Dotted,
+	 *     lineStyle: QuantCharts.LineStyle.Dotted,
 	 *     axisLabelVisible: true,
 	 *     title: 'P/L 500',
 	 * });

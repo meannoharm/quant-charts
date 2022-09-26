@@ -4,7 +4,7 @@ function inRange(from, value, to) {
 
 function runTestCase(container) {
 	const width = 400;
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		width: width,
 		height: 200,
 		rightPriceScale: {

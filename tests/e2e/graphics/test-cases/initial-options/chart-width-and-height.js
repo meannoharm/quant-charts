@@ -27,7 +27,7 @@ function runTestCase(container) {
 
 		container.appendChild(box);
 
-		const chart = LightweightCharts.createChart(box, config);
+		const chart = QuantCharts.createChart(box, config);
 		const mainSeries = chart.addAreaSeries();
 
 		mainSeries.setData(generateData());

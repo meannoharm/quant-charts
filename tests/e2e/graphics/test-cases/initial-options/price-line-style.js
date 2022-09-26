@@ -14,9 +14,9 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		rightPriceScale: {
-			mode: LightweightCharts.PriceScaleMode.Percentage,
+			mode: QuantCharts.PriceScaleMode.Percentage,
 		},
 	});
 
@@ -24,7 +24,7 @@ function runTestCase(container) {
 		priceLineVisible: true,
 		priceLineWidth: 2,
 		priceLineColor: '#92151E',
-		priceLineStyle: LightweightCharts.LineStyle.Dashed,
+		priceLineStyle: QuantCharts.LineStyle.Dashed,
 	});
 
 	firstSeries.setData(generateData());

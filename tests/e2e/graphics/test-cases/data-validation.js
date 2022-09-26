@@ -4,13 +4,13 @@ function runTestCase(container) {
 	}
 
 	try {
-		LightweightCharts.createChart('non-existed-id');
+		QuantCharts.createChart('non-existed-id');
 		console.assert(false, 'should fail if passed container id does not exist');
 	} catch (e) {
 		// passed
 	}
 
-	const chart = LightweightCharts.createChart(container);
+	const chart = QuantCharts.createChart(container);
 	const lineSeries = chart.addLineSeries();
 	const barSeries = chart.addBarSeries();
 

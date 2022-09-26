@@ -14,7 +14,7 @@ function generateData(valueOffset) {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container);
+	const chart = QuantCharts.createChart(container);
 
 	const firstSeries = chart.addLineSeries({
 		color: 'blue',

@@ -13,7 +13,7 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container);
+	const chart = QuantCharts.createChart(container);
 
 	const mainSeries = chart.addLineSeries();
 
@@ -23,7 +23,7 @@ function runTestCase(container) {
 		price: 980,
 		color: '#be1238',
 		lineWidth: 2,
-		lineStyle: LightweightCharts.LineStyle.Dotted,
+		lineStyle: QuantCharts.LineStyle.Dotted,
 		axisLabelVisible: true,
 		title: 'P/L: 500',
 	};

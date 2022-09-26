@@ -13,7 +13,7 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container);
+	const chart = QuantCharts.createChart(container);
 
 	const series = chart.addLineSeries();
 	series.setData(generateData());
@@ -24,34 +24,34 @@ function runTestCase(container) {
 		price: 10,
 		color: 'red',
 		lineWidth: 1,
-		lineStyle: LightweightCharts.LineStyle.Solid,
+		lineStyle: QuantCharts.LineStyle.Solid,
 	});
 
 	series.createPriceLine({
 		price: 20,
 		color: '#00FF00',
 		lineWidth: 2,
-		lineStyle: LightweightCharts.LineStyle.Dotted,
+		lineStyle: QuantCharts.LineStyle.Dotted,
 	});
 
 	series.createPriceLine({
 		price: 30,
 		color: 'rgb(0,0,255)',
 		lineWidth: 3,
-		lineStyle: LightweightCharts.LineStyle.Dashed,
+		lineStyle: QuantCharts.LineStyle.Dashed,
 	});
 
 	series.createPriceLine({
 		price: 40,
 		color: 'rgba(255,0,0,0.5)',
 		lineWidth: 4,
-		lineStyle: LightweightCharts.LineStyle.LargeDashed,
+		lineStyle: QuantCharts.LineStyle.LargeDashed,
 	});
 
 	series.createPriceLine({
 		price: 50,
 		color: 'rgba(0,255,0,0.5)',
 		lineWidth: 4,
-		lineStyle: LightweightCharts.LineStyle.SparseDotted,
+		lineStyle: QuantCharts.LineStyle.SparseDotted,
 	});
 }

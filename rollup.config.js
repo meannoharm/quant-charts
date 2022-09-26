@@ -24,7 +24,7 @@ function getConfig(inputFile, type, isProd) {
 		input: inputFile,
 		output: {
 			format: isModular ? 'esm' : 'iife',
-			file: `./dist/quantChart.${suffix}.${mode}.js`,
+			file: `./dist/quant-charts.${suffix}.${mode}.js`,
 			banner: `
 /*!
  * @license

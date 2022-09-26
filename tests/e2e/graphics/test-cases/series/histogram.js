@@ -20,7 +20,7 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container);
+	const chart = QuantCharts.createChart(container);
 
 	const mainSeries = chart.addHistogramSeries({
 		lineWidth: 1,

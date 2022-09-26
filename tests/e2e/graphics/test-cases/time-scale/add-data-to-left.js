@@ -35,7 +35,7 @@ let areaSeries = null;
 const ONE_DAY_IN_SEC = 24 * 60 * 60;
 
 function createChart(container) {
-	chart = LightweightCharts.createChart(container);
+	chart = QuantCharts.createChart(container);
 }
 
 function createOneSeries() {

@@ -14,9 +14,9 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		rightPriceScale: {
-			mode: LightweightCharts.PriceScaleMode.IndexedTo100,
+			mode: QuantCharts.PriceScaleMode.IndexedTo100,
 		},
 	});
 	const lineSeries = chart.addLineSeries({

@@ -13,11 +13,11 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container);
+	const chart = QuantCharts.createChart(container);
 
 	const mainSeries = chart.addLineSeries({
 		lineWidth: 1,
-		lineStyle: LightweightCharts.LineStyle.Dotted,
+		lineStyle: QuantCharts.LineStyle.Dotted,
 		color: '#ff0000',
 	});
 

@@ -23,7 +23,7 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(
+	const chart = QuantCharts.createChart(
 		container,
 		{
 			layout: {

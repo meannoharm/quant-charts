@@ -46,7 +46,7 @@ function generateDataLine(offset) {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container);
+	const chart = QuantCharts.createChart(container);
 
 	const mainSeries = chart.addBarSeries({
 		borderColor: 'rgba(0, 0, 255, 0.2)',
@@ -62,7 +62,7 @@ function runTestCase(container) {
 		lineWidth: 1,
 		color: '#ff0000',
 		priceLineWidth: 1,
-		priceLineStyle: LightweightCharts.LineStyle.LargeDashed,
+		priceLineStyle: QuantCharts.LineStyle.LargeDashed,
 		priceScaleId: 'my_overlay',
 	});
 
@@ -72,7 +72,7 @@ function runTestCase(container) {
 		lineWidth: 1,
 		color: '#0000ff',
 		priceLineWidth: 1,
-		priceLineStyle: LightweightCharts.LineStyle.LargeDashed,
+		priceLineStyle: QuantCharts.LineStyle.LargeDashed,
 		priceScaleId: 'my_overlay',
 	});
 

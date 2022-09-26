@@ -1,5 +1,5 @@
 async function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, { width: 150 });
+	const chart = QuantCharts.createChart(container, { width: 150 });
 
 	const timeScale = chart.timeScale();
 

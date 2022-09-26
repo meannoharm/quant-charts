@@ -39,7 +39,7 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		timeScale: {
 			barSpacing: 40,
 			timeVisible: true,

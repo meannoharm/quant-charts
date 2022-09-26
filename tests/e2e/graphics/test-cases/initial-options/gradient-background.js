@@ -14,10 +14,10 @@ function generateData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		layout: {
 			background: {
-				type: LightweightCharts.ColorType.VerticalGradient,
+				type: QuantCharts.ColorType.VerticalGradient,
 				topColor: '#b1ff73',
 				bottomColor: '#1106b1',
 			},

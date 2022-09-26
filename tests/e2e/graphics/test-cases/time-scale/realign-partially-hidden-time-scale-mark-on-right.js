@@ -69,7 +69,7 @@ function getData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		height: 200,
 		handleScale: false,
 		handleScroll: false,

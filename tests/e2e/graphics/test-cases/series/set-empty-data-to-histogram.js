@@ -22,7 +22,7 @@ function generateColoredData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container);
+	const chart = QuantCharts.createChart(container);
 
 	const areaSeries = chart.addAreaSeries();
 	const volumeSeries = chart.addHistogramSeries();

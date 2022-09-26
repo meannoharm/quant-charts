@@ -116,7 +116,7 @@ module.exports = {
 				node: false,
 			},
 			globals: {
-				LightweightCharts: false,
+				QuantCharts: false,
 
 				areaSeries: true,
 				barSeries: true,

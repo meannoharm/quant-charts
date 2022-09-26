@@ -9,6 +9,6 @@ module.exports = {
 		'no-unused-vars': ['error', { varsIgnorePattern: '^runTestCase$', args: 'none' }],
 	},
 	globals: {
-		LightweightCharts: false,
+		QuantCharts: false,
 	},
 };

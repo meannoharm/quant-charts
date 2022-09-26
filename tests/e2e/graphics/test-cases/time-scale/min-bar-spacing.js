@@ -23,7 +23,7 @@ function generateData(startValue) {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		timeScale: {
 			minBarSpacing: 0.001,
 		},

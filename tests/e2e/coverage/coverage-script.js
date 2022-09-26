@@ -1,4 +1,4 @@
-/* global LightweightCharts */
+/* global QuantCharts */
 
 // eslint-env browser
 
@@ -52,14 +52,14 @@ function generateHistogramData() {
 
 // eslint-disable-next-line no-unused-vars
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		leftPriceScale: {
 			visible: true,
-			mode: LightweightCharts.PriceScaleMode.Logarithmic,
+			mode: QuantCharts.PriceScaleMode.Logarithmic,
 		},
 		rightPriceScale: {
 			visible: true,
-			mode: LightweightCharts.PriceScaleMode.Percentage,
+			mode: QuantCharts.PriceScaleMode.Percentage,
 		},
 		timeScale: {
 			timeVisible: true,
@@ -77,7 +77,7 @@ function runTestCase(container) {
 		},
 		layout: {
 			background: {
-				type: LightweightCharts.ColorType.VerticalGradient,
+				type: QuantCharts.ColorType.VerticalGradient,
 				topColor: '#FFFFFF',
 				bottomColor: '#AAFFAA',
 			},
@@ -103,7 +103,7 @@ function runTestCase(container) {
 		priceFormat: {
 			type: 'volume',
 		},
-		lastPriceAnimation: LightweightCharts.LastPriceAnimationMode.Continuous,
+		lastPriceAnimation: QuantCharts.LastPriceAnimationMode.Continuous,
 	});
 	seriesToRemove.setData(generateLineData());
 
@@ -132,7 +132,7 @@ function runTestCase(container) {
 		priceFormat: {
 			type: 'volume',
 		},
-		lastPriceAnimation: LightweightCharts.LastPriceAnimationMode.OnDataUpdate,
+		lastPriceAnimation: QuantCharts.LastPriceAnimationMode.OnDataUpdate,
 	});
 
 	lineSeries.setData(generateLineData());
@@ -144,35 +144,35 @@ function runTestCase(container) {
 		price: 10,
 		color: 'red',
 		lineWidth: 1,
-		lineStyle: LightweightCharts.LineStyle.Solid,
+		lineStyle: QuantCharts.LineStyle.Solid,
 	});
 
 	areaSeries.createPriceLine({
 		price: 20,
 		color: '#00FF00',
 		lineWidth: 2,
-		lineStyle: LightweightCharts.LineStyle.Dotted,
+		lineStyle: QuantCharts.LineStyle.Dotted,
 	});
 
 	areaSeries.createPriceLine({
 		price: 30,
 		color: 'rgb(0,0,255)',
 		lineWidth: 3,
-		lineStyle: LightweightCharts.LineStyle.Dashed,
+		lineStyle: QuantCharts.LineStyle.Dashed,
 	});
 
 	const priceLineToRemove = areaSeries.createPriceLine({
 		price: 40,
 		color: 'rgba(255,0,0,0.5)',
 		lineWidth: 4,
-		lineStyle: LightweightCharts.LineStyle.LargeDashed,
+		lineStyle: QuantCharts.LineStyle.LargeDashed,
 	});
 
 	const priceLine1 = areaSeries.createPriceLine({
 		price: 50,
 		color: '#f0f',
 		lineWidth: 4,
-		lineStyle: LightweightCharts.LineStyle.SparseDotted,
+		lineStyle: QuantCharts.LineStyle.SparseDotted,
 	});
 
 	areaSeries.setMarkers([
@@ -207,10 +207,10 @@ function runTestCase(container) {
 
 			chart.applyOptions({
 				leftPriceScale: {
-					mode: LightweightCharts.PriceScaleMode.IndexedTo100,
+					mode: QuantCharts.PriceScaleMode.IndexedTo100,
 				},
 				rightPriceScale: {
-					mode: LightweightCharts.PriceScaleMode.Normal,
+					mode: QuantCharts.PriceScaleMode.Normal,
 					invertScale: true,
 					alignLabels: false,
 				},

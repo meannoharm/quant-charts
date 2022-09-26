@@ -14,7 +14,7 @@ export interface IPriceLine {
 	 *     price: 90.0,
 	 *     color: 'red',
 	 *     lineWidth: 3,
-	 *     lineStyle: LightweightCharts.LineStyle.Dashed,
+	 *     lineStyle: QuantCharts.LineStyle.Dashed,
 	 *     axisLabelVisible: false,
 	 *     title: 'P/L 600',
 	 * });

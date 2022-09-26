@@ -5,7 +5,7 @@ function runTestCase(container) {
 		{ time: 1609632000, value: 700 },
 	];
 
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		timeScale: {
 			barSpacing: 40,
 		},

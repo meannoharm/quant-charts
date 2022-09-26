@@ -18,29 +18,29 @@ function getData() {
 }
 
 function runTestCase(container) {
-	const chart = LightweightCharts.createChart(container, {
+	const chart = QuantCharts.createChart(container, {
 		timeScale: {
 			timeVisible: true,
 			secondsVisible: true,
 			tickMarkFormatter: (time, tickMarkType, locale) => {
-				const date = LightweightCharts.isBusinessDay(time)
+				const date = QuantCharts.isBusinessDay(time)
 					? new Date(Date.UTC(time.year, time.month - 1, time.day))
 					: new Date(time * 1000);
 
 				switch (tickMarkType) {
-					case LightweightCharts.TickMarkType.Year:
+					case QuantCharts.TickMarkType.Year:
 						return 'Y' + date.getUTCFullYear();
 
-					case LightweightCharts.TickMarkType.Month:
+					case QuantCharts.TickMarkType.Month:
 						return 'M' + (date.getUTCMonth() + 1);
 
-					case LightweightCharts.TickMarkType.DayOfMonth:
+					case QuantCharts.TickMarkType.DayOfMonth:
 						return 'D' + date.getUTCDate();
 
-					case LightweightCharts.TickMarkType.Time:
+					case QuantCharts.TickMarkType.Time:
 						return 'T' + date.getUTCHours() + ':' + date.getUTCMinutes();
 
-					case LightweightCharts.TickMarkType.TimeWithSeconds:
+					case QuantCharts.TickMarkType.TimeWithSeconds:
 						return 'S' + date.getUTCHours() + ':' + date.getUTCMinutes() + ':' + date.getUTCSeconds();
 				}
 
