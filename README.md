@@ -1,4 +1,4 @@
-# QuantCharts
+# quant-charts
 
 forked from [lightweight-charts](https://github.com/tradingview/lightweight-charts)
 
